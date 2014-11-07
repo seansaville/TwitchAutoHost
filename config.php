@@ -1,5 +1,5 @@
 <?php
-	$cudgs_password = ""; // Set this to a password of your choice
+	$master_password = ""; // Set this to a password of your choice
 
 	$irc_server = "irc.twitch.tv";
 	$irc_port = 6667;

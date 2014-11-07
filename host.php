@@ -14,7 +14,7 @@
 			$user_password = $_POST['userpassword'];
 			$user_channelname = $_POST['channelname'];
 
-			if ($user_password == $cudgs_password) {
+			if ($user_password == $master_password) {
 				// Password was correct, connect to IRC and post the hosting message
 				if ($user_channelname == "") {
 					echo "You need to enter a channel name!";
