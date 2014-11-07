@@ -29,6 +29,7 @@
 						sendCommand($server, "JOIN #$irc_nickname\n\r");
 						sendCommand($server, "PRIVMSG #$irc_nickname :.unhost\n\r");
 						sendCommand($server, "PRIVMSG #$irc_nickname :.host $user_channelname\n\r");
+						@fclose($server['SOCKET']);
 						echo "<p>";
 						echo "Awesome! The channel $user_channelname is now being hosted at <a href='http://twitch.tv/$irc_nickname'>twitch.tv/$irc_nickname</a>";
 						echo "</p>";

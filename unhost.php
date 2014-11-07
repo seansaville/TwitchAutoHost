@@ -12,6 +12,7 @@
 		sendCommand($server, "NICK $irc_nickname\n\r");
 		sendCommand($server, "JOIN #$irc_nickname\n\r");
 		sendCommand($server, "PRIVMSG #$irc_nickname :.unhost\n\r");
+		@fclose($server['SOCKET']);
 		header("location:index.php");
 	}
 ?>
