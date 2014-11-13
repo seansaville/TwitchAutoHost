@@ -6,17 +6,17 @@ TwitchAutoHost is a set of PHP scripts to allow people to host their Twitch.tv s
 
 ###How does it work?
 
-A Twitch.tv user can activate host mode by typing /host <channelname> into their own chat channel. Read more about Host Mode [here](http://blog.twitch.tv/2014/07/share-your-favorite-content-with-host-mode/).
+A Twitch.tv user can activate host mode by typing `/host <channelname>` into their own chat channel. Read more about Host Mode [here](http://blog.twitch.tv/2014/07/share-your-favorite-content-with-host-mode/).
 
 It is also possible to connect to any Twitch chat channel using the IRC protocol, details are [here](http://help.twitch.tv/customer/portal/articles/1302780-twitch-irc). Thus, TwitchAutoHost connects via IRC to your own chat channel, and sends the appropriate command to host the channel given by the user.
 
 ###Setup
 
-TwitchAutoHost is very simple to install. An example implementation can be found in 'index.php' in this repository.
+TwitchAutoHost is very simple to install. An example implementation can be found in `index.php` in this repository.
 
-The most important part is editing 'config.php' with the correct information for your own Twitch stream, as well as adding a password of your choice to access the hosting. Your OAuth token can be found on the Twitch.tv website, using the link to the IRC information above.
+The most important part is editing `config.php` with the correct information for your own Twitch stream, as well as adding a password of your choice to access the hosting. Your OAuth token can be found on the Twitch.tv website, using the link to the IRC information above.
 
-The example input form in 'index.php' is a good guideline as to how to pass the correct values to the scripts.
+The example input form in `index.php` is a good guideline as to how to pass the correct values to the scripts.
 
 ###Contact
 
