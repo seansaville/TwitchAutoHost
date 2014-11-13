@@ -2,7 +2,7 @@
 	include "config.php";
 
 	function sendCommand ($server, $cmd) { 
-    @fwrite($server['SOCKET'], $cmd, strlen($cmd)); // Sends the command to the server  
+		@fwrite($server['SOCKET'], $cmd, strlen($cmd)); // Sends the command to the server  
 	} 
 
 	$server = array(); // Array to store the IRC server details

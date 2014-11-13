@@ -8,7 +8,7 @@
 			include "config.php";
 
 			function sendCommand ($server, $cmd) { 
-		    @fwrite($server['SOCKET'], $cmd, strlen($cmd)); // Sends the command to the server  
+				@fwrite($server['SOCKET'], $cmd, strlen($cmd)); // Sends the command to the server  
 			} 
 
 			$user_password = $_POST['userpassword'];
